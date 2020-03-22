@@ -1,0 +1,5 @@
+C:\Users\Eco\source\repos\Carcare\Carcare.Models\bin\Debug\netcoreapp3.1\Carcare.Models.deps.json
+C:\Users\Eco\source\repos\Carcare\Carcare.Models\bin\Debug\netcoreapp3.1\Carcare.Models.dll
+C:\Users\Eco\source\repos\Carcare\Carcare.Models\obj\Debug\netcoreapp3.1\Carcare.Models.AssemblyInfoInputs.cache
+C:\Users\Eco\source\repos\Carcare\Carcare.Models\obj\Debug\netcoreapp3.1\Carcare.Models.AssemblyInfo.cs
+C:\Users\Eco\source\repos\Carcare\Carcare.Models\obj\Debug\netcoreapp3.1\Carcare.Models.csprojAssemblyReference.cache
