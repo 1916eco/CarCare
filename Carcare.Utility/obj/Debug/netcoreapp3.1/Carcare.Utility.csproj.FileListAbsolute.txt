@@ -1,0 +1,8 @@
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\bin\Debug\netcoreapp3.1\Carcare.Utility.deps.json
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\bin\Debug\netcoreapp3.1\Carcare.Utility.dll
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\bin\Debug\netcoreapp3.1\Carcare.Utility.pdb
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.csprojAssemblyReference.cache
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.AssemblyInfoInputs.cache
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.AssemblyInfo.cs
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.dll
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.pdb

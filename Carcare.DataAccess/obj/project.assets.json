@@ -2989,6 +2989,30 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Carcare.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
+          "Microsoft.Extensions.Identity.Stores": "3.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Carcare.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Carcare.Models.dll": {}
+        }
+      },
+      "Carcare.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Carcare.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Carcare.Utility.dll": {}
+        }
       }
     }
   },
@@ -9188,10 +9212,22 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Carcare.Models/1.0.0": {
+      "type": "project",
+      "path": "../Carcare.Models/Carcare.Models.csproj",
+      "msbuildProject": "../Carcare.Models/Carcare.Models.csproj"
+    },
+    "Carcare.Utility/1.0.0": {
+      "type": "project",
+      "path": "../Carcare.Utility/Carcare.Utility.csproj",
+      "msbuildProject": "../Carcare.Utility/Carcare.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Carcare.Models >= 1.0.0",
+      "Carcare.Utility >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.2",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 3.1.2",
@@ -9224,7 +9260,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Eco\\Projects\\CarCare\\Carcare.Models\\Carcare.Models.csproj": {
+              "projectPath": "C:\\Users\\Eco\\Projects\\CarCare\\Carcare.Models\\Carcare.Models.csproj"
+            },
+            "C:\\Users\\Eco\\Projects\\CarCare\\Carcare.Utility\\Carcare.Utility.csproj": {
+              "projectPath": "C:\\Users\\Eco\\Projects\\CarCare\\Carcare.Utility\\Carcare.Utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
