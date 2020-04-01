@@ -19,11 +19,6 @@
 
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
-  </ItemGroup>
-
-
-  <ItemGroup>
     <ProjectReference Include="..\Carcare.DataAccess\Carcare.DataAccess.csproj" />
   </ItemGroup>
 
