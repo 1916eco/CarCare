@@ -864,3 +864,4 @@ C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.RazorTarge
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.RazorTargetAssemblyInfo.cs
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.Views.pdb
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.csproj.CopyComplete
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
