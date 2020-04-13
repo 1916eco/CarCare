@@ -774,7 +774,6 @@ C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\System.Composition
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
@@ -836,7 +835,6 @@ C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\runtimes\win-x64\n
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\Carcare.DataAccess.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\Carcare.Models.dll
@@ -865,3 +863,8 @@ C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.RazorTarge
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.Views.pdb
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.csproj.CopyComplete
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.csproj.CoreCompileInputs.cache
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Carcare.genruntimeconfig.cache
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Upsert.cshtml.g.cs
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CreateAndBackToListButton.cshtml.g.cs
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_EditAndBackToListButton.cshtml.g.cs

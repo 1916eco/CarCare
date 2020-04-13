@@ -6,3 +6,4 @@ C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Ut
 C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.AssemblyInfo.cs
 C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.dll
 C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.pdb
+C:\Users\Eco\Projects\CarCare\Carcare.Utility\obj\Debug\netcoreapp3.1\Carcare.Utility.csproj.CoreCompileInputs.cache

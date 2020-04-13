@@ -16,3 +16,4 @@ C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Debug\netcoreapp3.1\Carcare
 C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Debug\netcoreapp3.1\Carcare.DataAccess.csproj.CopyComplete
 C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Debug\netcoreapp3.1\Carcare.DataAccess.dll
 C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Debug\netcoreapp3.1\Carcare.DataAccess.pdb
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Debug\netcoreapp3.1\Carcare.DataAccess.csproj.CoreCompileInputs.cache

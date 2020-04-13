@@ -19,11 +19,11 @@ namespace Carcare.Areas.Admin.Controllers
             _unitOfWork = unitOfWork;
         }
 
+
         public IActionResult Index()
         {
             return View();
         }
-
 
         public IActionResult Upsert(int? id)
         {
@@ -68,7 +68,6 @@ namespace Carcare.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             return Json(new { data = _unitOfWork.Category.GetAll() });
-            //return Json(new { data = _unitOfWork.SP_Call.ReturnList<Category>(SD.usp_GetAllCategory,null)  });
         }
 
         [HttpDelete]
