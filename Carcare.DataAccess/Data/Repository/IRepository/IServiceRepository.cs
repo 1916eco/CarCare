@@ -8,7 +8,6 @@ namespace Carcare.DataAccess.Data.Repository.IRepository
 {
     public interface IServiceRepository : IRepository<Service>
     {
-        IEnumerable<SelectListItem> GetServiceListForDropDown();
 
         void Update(Service Service);
     }
