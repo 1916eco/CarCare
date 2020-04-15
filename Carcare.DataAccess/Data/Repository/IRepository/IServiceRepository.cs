@@ -9,6 +9,6 @@ namespace Carcare.DataAccess.Data.Repository.IRepository
     public interface IServiceRepository : IRepository<Service>
     {
 
-        void Update(Service Service);
+        void Update(Service service);
     }
 }
