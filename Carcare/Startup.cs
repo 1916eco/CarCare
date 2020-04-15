@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Carcare.DataAccess.Data;
 using Carcare.DataAccess.Data.Repository.IRepository;
 using Carcare.DataAccess.Data.Repository;
+using System;
 
 namespace Carcare
 {
@@ -33,6 +34,14 @@ namespace Carcare
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(50);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
             services.AddControllersWithViews().AddNewtonsoftJson().AddRazorRuntimeCompilation();
             services.AddRazorPages();
         }
@@ -53,7 +62,7 @@ namespace Carcare
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthentication();
