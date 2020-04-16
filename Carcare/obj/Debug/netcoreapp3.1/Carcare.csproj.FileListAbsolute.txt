@@ -873,3 +873,6 @@ C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Service\Index.cshtml.g.cs
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Service\Upsert.cshtml.g.cs
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\Summary.cshtml.g.cs
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\Views\Cart\OrderConfirmation.cshtml.g.cs
