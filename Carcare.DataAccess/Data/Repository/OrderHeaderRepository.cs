@@ -15,5 +15,6 @@ namespace Carcare.DataAccess.Data.Repository
         {
             _db = db;
         }
+
     }
 }
