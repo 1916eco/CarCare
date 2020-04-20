@@ -916,3 +916,5 @@ C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Identi
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\refs\System.Text.Json.dll
 C:\Users\Eco\Projects\CarCare\Carcare\bin\Debug\netcoreapp3.1\Dapper.dll
 C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Order\Index.cshtml.g.cs
+C:\Users\Eco\Projects\CarCare\Carcare\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Order\Details.cshtml.g.cs
