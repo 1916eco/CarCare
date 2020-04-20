@@ -5,10 +5,13 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Carcare.DataAccess.Data.Repository.IRepository;
+using Microsoft.AspNetCore.Authorization;
+using Carcare.Utility;
 
 namespace Carcare.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Admin)]
     public class UserController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

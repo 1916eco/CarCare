@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Carcare.DataAccess.Data.Repository.IRepository;
 using Carcare.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Carcare.Areas.Admin.Controllers
 {
+    [Authorize]
     [Area("Admin")]
     public class FrequencyController : Controller
     {

@@ -9,6 +9,7 @@ using Carcare.Models;
  
 namespace Carcare.Areas.Admin.Controllers
 {
+    [Authorize]
     [Area("Admin")]
     public class CategoryController : Controller
     {

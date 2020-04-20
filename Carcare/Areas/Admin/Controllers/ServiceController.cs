@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Carcare.DataAccess.Data.Repository.IRepository;
 using Carcare.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Carcare.Areas.Admin.Controllers
 {
+    [Authorize]
     [Area("Admin")]
     public class ServiceController : Controller
     {
