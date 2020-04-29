@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Carcare.DataAccess.Data.Repository.IRepository;
 using Carcare.Models;
- 
+using Carcare.Utility;
+
 namespace Carcare.Areas.Admin.Controllers
 {
     [Authorize]
@@ -69,6 +70,8 @@ namespace Carcare.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             return Json(new { data = _unitOfWork.Category.GetAll() });
+            //return Json(new { data = _unitOfWork.SP_Call.ReturnList<Category>(SD.usp_GetAllCategory, null) });
+
         }
 
         [HttpDelete]

@@ -16,6 +16,7 @@ using Carcare.DataAccess.Data.Repository.IRepository;
 using Carcare.DataAccess.Data.Repository;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Carcare.Utility;
+using Carcare.DataAccess.Data.Initializer;
 
 namespace Carcare
 {
@@ -48,6 +49,7 @@ namespace Carcare
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+            services.AddScoped<IDbinitalizer, Dbinitalizer>();
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -60,7 +62,7 @@ namespace Carcare
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbinitalizer dbInit)
         {
             if (env.IsDevelopment())
             {
@@ -81,6 +83,7 @@ namespace Carcare
 
             app.UseRouting();
 
+            dbInit.Initialize();
             app.UseAuthentication();
             app.UseAuthorization();
 
