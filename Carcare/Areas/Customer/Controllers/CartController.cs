@@ -43,16 +43,22 @@ namespace Carcare.Areas.Customer.Controllers
             }
             return View(CartVM);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Summary()
         {
-            if (HttpContext.Session.GetObject<List<int>>(SD.SessionCart) != null)
+            if (ModelState.IsValid)
             {
-                List<int> sessionList = new List<int>();
-                sessionList = HttpContext.Session.GetObject<List<int>>(SD.SessionCart);
-                foreach (int serviceId in sessionList)
+                if (HttpContext.Session.GetObject<List<int>>(SD.SessionCart) != null)
                 {
-                    CartVM.ServiceList.Add(_unitOfWork.Service.GetFirstOrDefault(u => u.Id == serviceId, includeProperties: "Frequency,Category"));
+                    List<int> sessionList = new List<int>();
+                    sessionList = HttpContext.Session.GetObject<List<int>>(SD.SessionCart);
+                    foreach (int serviceId in sessionList)
+                    {
+                        CartVM.ServiceList.Add(_unitOfWork.Service.GetFirstOrDefault(u => u.Id == serviceId, includeProperties: "Frequency,Category"));
+                    }
                 }
             }
             return View(CartVM);
@@ -110,7 +116,11 @@ namespace Carcare.Areas.Customer.Controllers
             return View(id);
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="serviceId"></param>
+        /// <returns></returns>
         public IActionResult Remove(int serviceId)
         {
             List<int> sessionList = new List<int>();

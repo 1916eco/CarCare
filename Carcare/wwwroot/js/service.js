@@ -15,13 +15,21 @@ function loadDataTable() {
         "columns": [
             { "data": "name", "width": "20%" },
             { "data": "category.name", "width": "20%" },
-            { "data": "price", "width": "15%" },
-            { "data": "frequency.frequencyCount", "width": "15%" },
+            { "data": "price", "width": "10%" },
+            { "data": "frequency.frequencyCount", "width": "10%" },
+            
             {
-                "data": "id",
-                "render": function (data) {
-
-                    return `<div class="text-center"> 
+                "data": "id",                
+                "render": function (data, type, row) {
+                    var checked = "";
+                    if (row.available)
+                        checked = 'checked=""';
+                    return `    
+                            <div class="text-center"> 
+                            <div class="custom-control custom-switch" style="float:left;margin-top:7px;">
+                                  <input type="checkbox"  onclick="SetAvailable(${data},this)"   class="custom-control-input" id="customSwitch_${data}" ${checked}>
+                                  <label class="custom-control-label" for="customSwitch_${data}">Available</label>
+                                </div>
                             <a href="/Admin/service/Upsert/${data}" class='btn btn-success text-white' style='cursor:pointer; width:100px;' >
                                 <i class='far fa-edit'></i> Edit
                             </a>
@@ -30,7 +38,7 @@ function loadDataTable() {
                                <i class='far fa-trash-alt'></i> Delete
                             </a></div>
                         `;
-                }, "width": "30%"
+                }, "width": "35%"
             }
 
 
@@ -67,6 +75,19 @@ function Delete(url) {
             }
         });
     });
+}
 
 
+function SetAvailable(id,btn) {
+    var url = '/admin/service/SetAvailable';    
+    $.ajax({
+        type: 'POST',
+        dataType: "json",
+        url: url,
+        headers: {'content-Type':'application/json'},
+        data: JSON.stringify({ id: id, available : btn.checked }),
+        success: function (msg) {
+            console.log(msg);
+        }
+    });
 }

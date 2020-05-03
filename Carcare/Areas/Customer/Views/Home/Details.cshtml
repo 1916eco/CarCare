@@ -17,7 +17,7 @@
                 <h1 class="text-primary">@Model.Name</h1>
             </div>
             <div class="col-12 col-md-6 text-md-right">
-                <h1 class="text-muted">Total : @((Model.Price * Model.Frequency.FrequencyCount).ToString("c"))</h1>
+                <h1 class="text-muted">Total : @((Model.Price * Model.Frequency.FrequencyCount).ToString("c", new System.Globalization.CultureInfo("en-GB")))</h1>
             </div>
         </div>
         <div class="card-body">
@@ -26,7 +26,7 @@
                     <div class="col-12 col-lg-8">
                         <div class="row">
                             <div class="col-12">
-                                <h3 class="text-success">Price per Month: £@Model.Price</h3>
+                                <h3 class="text-success">Price per Frequency: @Model.Price.ToString("c", new System.Globalization.CultureInfo("en-GB"))</h3>
                                 <h4 class="text-muted">@Model.Frequency.Name</h4>
                                 <p class="text-secondary">@Html.Raw(Model.LongDesc)</p>
                             </div>
@@ -62,7 +62,14 @@
 
                     @if (AddToCartEnabled)
                     {
-                        <a asp-action="AddToCart" asp-route-serviceId="@Model.Id" class="btn btn-primary btn-square form-control btn-lg" style="height:50px;">Add to Cart</a>
+                        @if (Model.Available)
+                        {
+                            <a asp-action="AddToCart" asp-route-serviceId="@Model.Id" class="btn btn-primary btn-square form-control btn-lg" style="height:50px;">Add to Cart</a>
+                        }
+                        else
+                        {
+                            <a asp-action="AddToCart" asp-route-serviceId="@Model.Id" class="btn btn-primary btn-square form-control btn-lg disabled" style="height:50px;">Unavailable</a>
+                        }
                     }
                     else
                     {

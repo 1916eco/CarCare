@@ -91,15 +91,19 @@
 
                                     @foreach (var details in Model.ServiceList)
                                     {
-                                        <li class="list-group-item d-flex justify-content-between">
-                                            <div>
-                                                <input type="hidden" asp-for="@details.Id" />
-                                                <h6 class="my-0">@details.Name</h6>
-                                                <small class="text-muted">Frequency : @details.Frequency.FrequencyCount Times</small>
-                                            </div>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div>
+                                            <input type="hidden" asp-for="@details.Id" />
+                                            <h6 class="my-0">@details.Name</h6>
+                                            <small class="text-muted">Frequency : @(details.Frequency != null ? details.Frequency.FrequencyCount + " Frequency" : "")</small>
+                                        </div>
+                                        @if (details.Frequency != null)
+                                        {
                                             <span class="text-muted">£@(details.Price*details.Frequency.FrequencyCount)</span>
-                                            @{ total += (details.Price * details.Frequency.FrequencyCount);}
-                                        </li>
+                                        }
+
+                                        @{ total += details.Frequency != null ? (details.Price * details.Frequency.FrequencyCount) : details.Price;}
+                                    </li>
                                     }
 
                                     <li class="list-group-item d-flex justify-content-between bg-light">

@@ -96,7 +96,7 @@ namespace Carcare.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    ModelState.AddModelError("WRONG_PASS", "Invalid login attempt.");
                     return Page();
                 }
             }

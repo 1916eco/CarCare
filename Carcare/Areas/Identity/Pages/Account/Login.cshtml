@@ -9,6 +9,11 @@
 <div class="login-form pt-4">
     <form id="account" method="post">
         <h2 class="text-center text-success"><b>Log in</b></h2>
+        
+            <div class="text-danger" style="margin-bottom: 20px;">                
+                @Html.ValidationMessage("WRONG_PASS")
+            </div>
+                
         <div class="form-group">
             <input asp-for="Input.Email" placeholder="Email..." class="form-control" />
             <span asp-validation-for="Input.Email" class="text-danger"></span>

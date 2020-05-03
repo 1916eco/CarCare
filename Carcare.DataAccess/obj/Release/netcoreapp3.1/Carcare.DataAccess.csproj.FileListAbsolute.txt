@@ -1,0 +1,14 @@
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\bin\Release\netcoreapp3.1\Carcare.DataAccess.deps.json
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\bin\Release\netcoreapp3.1\Carcare.DataAccess.dll
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\bin\Release\netcoreapp3.1\Carcare.DataAccess.pdb
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\bin\Release\netcoreapp3.1\Carcare.Models.dll
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\bin\Release\netcoreapp3.1\Carcare.Utility.dll
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\bin\Release\netcoreapp3.1\Carcare.Models.pdb
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\bin\Release\netcoreapp3.1\Carcare.Utility.pdb
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Release\netcoreapp3.1\Carcare.DataAccess.csprojAssemblyReference.cache
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Release\netcoreapp3.1\Carcare.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Release\netcoreapp3.1\Carcare.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Release\netcoreapp3.1\Carcare.DataAccess.AssemblyInfo.cs
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Release\netcoreapp3.1\Carcare.DataAccess.csproj.CopyComplete
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Release\netcoreapp3.1\Carcare.DataAccess.dll
+C:\Users\Eco\Projects\CarCare\Carcare.DataAccess\obj\Release\netcoreapp3.1\Carcare.DataAccess.pdb

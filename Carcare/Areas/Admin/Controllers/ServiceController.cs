@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Carcare.DataAccess.Data.Repository.IRepository;
 using Carcare.Models.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using Carcare.Models;
 
 namespace Carcare.Areas.Admin.Controllers
 {
@@ -116,7 +117,22 @@ namespace Carcare.Areas.Admin.Controllers
         #region API Calls
         public IActionResult GetAll()
         {
-            return Json(new { data = _unitOfWork.Service.GetAll(includeProperties: "Category,Frequency") });
+            var json = Json(new { data = _unitOfWork.Service.GetAll(includeProperties: "Category,Frequency") });
+            return json;
+        }
+
+        [HttpPost]
+        public IActionResult SetAvailable([FromBody]Service data)
+        {
+            var serviceFromDb = _unitOfWork.Service.Get(data.Id);
+            if (serviceFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while Hiding." });
+            }
+
+            serviceFromDb.Available = data.Available;
+            _unitOfWork.Save();
+            return Json(new { success = true });
         }
 
         [HttpDelete]

@@ -36,7 +36,7 @@ namespace Carcare.Models
 
         [ForeignKey("FrequencyId")]
         public Frequency Frequency { get; set; }
-
+        public bool Available { get; set; }
 
     }
-}
+} 
