@@ -15,7 +15,7 @@ function loadDataTable() {
         "columns": [
             { "data": "name", "width": "20%" },
             { "data": "category.name", "width": "20%" },
-            { "data": "price", "width": "15%" },
+            { "data": "price", "width": "10%" },
             { "data": "frequency.frequencyCount", "width": "10%" },
             
             {
@@ -28,7 +28,7 @@ function loadDataTable() {
                             <div class="text-center"> 
                             <div class="custom-control custom-switch" style="float:left;margin-top:7px;">
                                   <input type="checkbox"  onclick="SetAvailable(${data},this)"   class="custom-control-input" id="customSwitch_${data}" ${checked}>
-                                  <label class="custom-control-label" for="customSwitch_${data}"></label>
+                                  <label class="custom-control-label" for="customSwitch_${data}">Available</label>
                                 </div>
                             <a href="/Admin/service/Upsert/${data}" class='btn btn-success text-white' style='cursor:pointer; width:100px;' >
                                 <i class='far fa-edit'></i> Edit
@@ -38,7 +38,7 @@ function loadDataTable() {
                                <i class='far fa-trash-alt'></i> Delete
                             </a></div>
                         `;
-                }, "width": "30%"
+                }, "width": "35%"
             }
 
 
