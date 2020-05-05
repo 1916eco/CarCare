@@ -1,5 +1,10 @@
 ﻿@model Carcare.Models.ViewModels.HomeViewModel
 
+
+
+    <div style="position:fixed;right:0px;top:150px; ">
+        <button id="information"><i class="fas fa-info-circle" aria-hidden="true" onclick="displayInfo()" style="padding:10px;"></i></button>
+    </div>
 @foreach (var category in Model.CategoryList.OrderBy(o => o.DisplayOrder))
 {
     @if (Model.ServiceList.Where(c => c.CategoryId == category.Id).Count() > 0)
@@ -14,7 +19,7 @@
                             @foreach (var service in Model.ServiceList.Where(c => c.CategoryId == category.Id))
                             {
                                 <div class="col-lg-4 col-xl-3 col-md-6 pb-4">
-                                    <div class="card" style="border:2px solid #43ac6a;border-radius:5px;">
+                                    <div class="card" style="border: 2px solid #43ac6a; border-radius: 5px;">
                                         <div class="pl-3 pt-1 text-center">
                                             <h3 class="card-title text-primary"><b>@service.Name</b></h3>
                                         </div>
@@ -43,3 +48,8 @@
         </div>
     }
 }
+<script>
+    function displayInfo() {
+        swal("Information","Cutomers - To purchase from the website click on the details of the item you wish to purchase, from that point you can add it to cart, from the cart you are able to go to the summary page where you can fill out the information for the order to take place! \n \nNon-Customer Info - Login details for the admin login is admin@gmail.com with password Admin123? please take a look as most of the service for this webpage is the backend for managing the website")
+    }
+</script>
