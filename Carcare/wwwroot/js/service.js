@@ -50,6 +50,8 @@ function loadDataTable() {
     });
 }
 
+//Delete function is called when the delete button is clicked 
+//which the goes to the page controller in this case the Category controller with the url parameter that has the id of the service 
 function Delete(url) {
     swal({
         title: "Are you sure want to Delete?",

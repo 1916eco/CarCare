@@ -15,6 +15,9 @@ $(document).ready(function () {
 
     }
 });
+
+//Loading the datatables library which will draw out the entire table with the table information 
+///each data requires a header as first parameter then I put the width as for each data added
 function loadDataTable(url) {
 
     dataTable = $('#tblData').DataTable({

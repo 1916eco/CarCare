@@ -4,6 +4,9 @@ $(document).ready(function () {
     loadDataTable();
 });
 
+//Loading the datatables library which will draw out the entire table with the table information 
+///each data requires a header as first parameter then I put the width as for each data added
+
 function loadDataTable() {
     dataTable = $('#tblData').DataTable({
         "ajax": {
@@ -36,6 +39,9 @@ function loadDataTable() {
         "width": "100%"
     });
 }
+
+//Delete function is called when the delete button is clicked 
+//which the goes to the page controller in this case the Category controller with the url parameter that has the id of the category
 
 function Delete(url) {
     swal({
